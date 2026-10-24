@@ -1,39 +1,35 @@
+
 using System;
 
 class Program
 {
     static void Main(string[] args)
     {
-        int magicNumber = 0;
+        Console.Write("What is the magic number? ");
+        int magicNumber = int.Parse(Console.ReadLine());
+
         int guess = 0;
         int attempts = 0;
 
         while (guess != magicNumber)
         {
-        
-        Console.Write("What is the magic number? ");
-        magicNumber = int.Parse(Console.ReadLine());
-        Console.Write("What is your guess? ");
-        guess = int.Parse(Console.ReadLine());
+            Console.Write("What is your guess? ");
+            guess = int.Parse(Console.ReadLine());
 
-        attempts ++;
+            attempts++;
 
-        if (guess == magicNumber)
-        {
-            Console.WriteLine($"Correct! You got it in {attempts} attempts.");
-        } 
-        
-        else if (guess > magicNumber)
-        {
-            Console.WriteLine("Lower");
+            if (guess == magicNumber)
+            {
+                Console.WriteLine($"Correct! You got it in {attempts} attempts.");
+            }
+            else if (guess > magicNumber)
+            {
+                Console.WriteLine("Lower");
+            }
+            else
+            {
+                Console.WriteLine("Higher");
+            }
         }
-        else
-        {
-            Console.WriteLine("Higher");
-        }
-
-        }
-    
-
     }
 }
