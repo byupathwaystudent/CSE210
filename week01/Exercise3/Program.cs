@@ -5,8 +5,8 @@ class Program
 {
     static void Main(string[] args)
     {
-        Console.Write("What is the magic number? ");
-        int magicNumber = int.Parse(Console.ReadLine());
+        //Console.Write("What is the magic number? ");
+        int magicNumber = 10; // int.Parse(Console.ReadLine());
 
         int guess = 0;
         int attempts = 0;
