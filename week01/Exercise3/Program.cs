@@ -21,18 +21,19 @@ class Program
 
             attempts++;
 
-            if (guess == magicNumber)
-            {
-                Console.WriteLine($"Correct! You got it in {attempts} attempts.");
-            }
-            else if (guess > magicNumber)
+            if (guess > magicNumber)
             {
                 Console.WriteLine("Lower");
             }
-            else
+            else if (guess < magicNumber)
             {
                 Console.WriteLine("Higher");
-            }         
+            }
+            else
+            {
+                Console.WriteLine($"Congratulastion! You guess it in {attempts} try.");
+            }
+
         }
     }
 }
