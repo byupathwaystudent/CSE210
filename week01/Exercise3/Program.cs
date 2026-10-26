@@ -34,6 +34,10 @@ class Program
                 Console.WriteLine($"Congratulastion! You guess it in {attempts} try.");
             }
 
+            //Console.WriteLine("Do you want to play again? ");
+            //string response = Console.ReadLine();
+            
+
         }
     }
 }
