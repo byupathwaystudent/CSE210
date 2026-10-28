@@ -26,14 +26,22 @@ class Program
              
         }
 
+        //Core Requirements
+        //1. Compute the sum, or total, of the numbers in the list.
         int total = storage.Sum();
+
+        //2. Compute the average of the numbers in the list.
         double average = storage.Average();
+
+        //3. Find the maximum, or largest, number in the list.
         int max = storage.Max();
+
 
         Console.WriteLine($"The minimum nummber in the list is {average}.");
         Console.WriteLine($"The maximum nummber in the list is {max}.");
         Console.WriteLine($"The sum of all number in the ist is {total}");
+        
 
-        Console.WriteLine($"There are {storage.Count} items stored inside the storage");
+        Console.WriteLine($"There are {storage.Count} numbers stored inside the storage");
     }
 }
