@@ -5,50 +5,52 @@ class Program
 {
     static void Main(string[] args)
     {
+
+        DisplayWelcome();
+        PromptUserName();
+        PromptUserNumber();
+        SquareNumber();
+
+
+
+
+
+
+
+
+
+
+        
+
         static void DisplayWelcome()
         {
             Console.WriteLine("Welcome to the program!");
         }
 
-    DisplayWelcome();
-
-        static void PromptUserName()
+        static string PromptUserName()
         {
             Console.WriteLine("Please enter your name: ");
             string userName = Console.ReadLine();
+            return userName;
         }
 
-
-        static void DisplayResult()
-        {
-            
-        }
-
-
-
-
-
-
-
-
-/*
-    PromptUserName();
-    
-        static int PromptUserNumber(int favoriteNumber)
+        static int PromptUserNumber()
         {
             Console.WriteLine("Please enter your favorite number: ");
-            int number = int.Parse(Console.ReadLine());
+            int favoriteNumber = int.Parse(Console.ReadLine());
+            return favoriteNumber;
         }
 
-    SquareNumber();
-
-        static void SquareNumber();
+        static int SquareNumber(int favoriteNumber)
         {
-            int squared = number * number; 
-            return     
+            int squared = favoriteNumber * favoriteNumber;
+            return squared;
+        }
+        
+        static void DisplayResult()
+        {
+            Console.WriteLine($({}))
         }
 
-        static void DisplayResult()
-     */   
     }
 }
