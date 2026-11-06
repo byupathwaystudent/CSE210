@@ -5,7 +5,7 @@ public class Journal
 
     public void AddEntry()
     {
-        
+        Console.WriteLine(">");
     }
 
     public void DisplayAll()
