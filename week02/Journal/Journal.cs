@@ -39,16 +39,12 @@ public class Journal
 
       foreach (string line in lines)
         {
-            string[] parts = line.Split(",", 3);
-
-            if (parts.Length < 3)
-            {
-                continue;
-            }
+            string[] parts = line.Split('|');
 
             string date = parts[0];
             string prompt = parts[1];
             string response = parts[2];
+
             Entry entry = new Entry(date, prompt, response);
 
 
