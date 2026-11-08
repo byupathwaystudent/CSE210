@@ -24,7 +24,7 @@ public class Journal
        List<string> lines = new List<string>();
             foreach (Entry entry in _entries)
             {
-                lines.Add($"{entry._date},{entry._promptText},{entry._entryText}");
+                lines.Add($"{entry._date},{entry._promptText},{entry._mood},{entry._entryText}");
             }
             File.WriteAllLines(filename, lines);
     }
@@ -41,8 +41,9 @@ public class Journal
 
             string date = parts[0];
             string prompt = parts[1];
-            string response = parts[2];
-            Entry entry = new Entry(date, prompt, response);
+            string mood = parts[2];
+            string response = parts[3];
+            Entry entry = new Entry(date, prompt, mood, response);
 
 
             AddEntry(entry);
