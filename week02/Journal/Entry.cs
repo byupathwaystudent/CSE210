@@ -19,7 +19,7 @@ public class Entry
     {
         Console.WriteLine($"DATE: {_date}");
         Console.WriteLine($"PROMPT: {_promptText}");
-        Console.WriteLine($"MOOD: {_promptText}");
+        Console.WriteLine($"MOOD: {_mood}");
         Console.WriteLine($"THOUGHTS: {_entryText}");
     }
 }
