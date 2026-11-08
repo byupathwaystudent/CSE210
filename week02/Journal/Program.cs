@@ -31,9 +31,10 @@ class Program
 
                 Console.WriteLine("What is your mood today?");
                 string mood = Console.ReadLine();
-                Console.Write(">");
 
+                Console.Write(">");
                 string response = Console.ReadLine();
+                
                 string date = DateTime.Now.ToString();
 
                 Entry entry1 = new Entry(date, randomPrompt, mood, response);
