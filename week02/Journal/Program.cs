@@ -25,16 +25,17 @@ class Program
 
             if (choice == "1")
             {  
+
+                Console.Write("What is your mood today?");
+                string mood = Console.ReadLine();
+
                 PromptGenerator promptGen = new PromptGenerator();
                 string randomPrompt = promptGen.GetRandomPrompt();
                 Console.WriteLine(randomPrompt);
 
-                Console.WriteLine("What is your mood today?");
-                string mood = Console.ReadLine();
-
                 Console.Write(">");
                 string response = Console.ReadLine();
-                
+
                 string date = DateTime.Now.ToString();
 
                 Entry entry1 = new Entry(date, randomPrompt, mood, response);
