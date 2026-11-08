@@ -18,6 +18,13 @@ class Program
             choice = Console.ReadLine();
         }
         
+    
+    if (choice == "1")
+        {
+            
+            Console.WriteLine(">");
+            string notes = Console.ReadLine();
+        }
 
         
 

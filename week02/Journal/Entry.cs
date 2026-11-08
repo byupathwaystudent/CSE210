@@ -6,9 +6,6 @@ public class Entry
 
     public void Display()
     {
-        //Console.WriteLine(${});
+        Console.WriteLine($"{_date} {_promtText} {_entryText}");
     }
-
-
-
 }

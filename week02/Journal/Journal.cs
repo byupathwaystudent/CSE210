@@ -3,14 +3,17 @@ public class Journal
     public List<Entry> _entries = new List<Entry>();
 
 
-    public void AddEntry()
+    public void AddEntry(Entry entry)
     {
-        Console.WriteLine(">");
+        _entries.Add(entry);
     }
 
     public void DisplayAll()
     {
-        
+       foreach (Entry entry in _entries)
+        {
+            entry.Display();
+        }
     }
 
     public void SaveToFile()
