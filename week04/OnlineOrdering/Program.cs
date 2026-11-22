@@ -8,8 +8,8 @@ class Program
         
         Address address1 = new Address(
             "123 Main Street",
-            "New York",
-            "NY",
+            "Salt Lake",
+            "SLC",
             "USA"
         );
 
@@ -62,9 +62,11 @@ class Program
 
         Console.WriteLine("----------------------------------");
         Console.WriteLine($"Total Cost: ${order1.GetTotalCost():F2}");
+        Console.WriteLine();
 
         
         Console.WriteLine("             ORDER 2");
+        
         
 
         Console.WriteLine(order2.GetPackingLabel());
